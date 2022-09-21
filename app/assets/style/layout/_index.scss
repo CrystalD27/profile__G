@@ -72,6 +72,9 @@
 .dot {
   position: relative;
 
+  @include phone {
+    font-size: 14px;
+  }
 }
 
 .dot::before {
@@ -84,6 +87,11 @@
   left: -5%;
   top: 30%;
 
+  @include phone {
+    width: 6px;
+    height: 6px;
+    left: -8%;
+  }
 
 }
 

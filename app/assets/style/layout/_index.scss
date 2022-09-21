@@ -1,5 +1,122 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.profile__img {
+  width: 300px;
+  height: 340px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.portfolio_img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__card {
+  position: relative;
+
+  .square {
+    display: none;
+    width: 28px;
+    height: 28px;
+
+    &__top__left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 2px solid $secondary;
+      border-left: 2px solid $secondary;
+      border-top-left-radius: 8px;
+    }
+
+    &__top__right {
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 2px solid $secondary;
+      border-right: 2px solid $secondary;
+      border-top-right-radius: 8px;
+    }
+
+    &__bottom__left {
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid $secondary;
+      border-left: 2px solid $secondary;
+      border-bottom-left-radius: 8px;
+    }
+
+    &__bottom__right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 2px solid $secondary;
+      border-right: 2px solid $secondary;
+      border-bottom-right-radius: 8px;
+
+    }
+
+  }
+
+  &:hover {
+    .square {
+      display: block;
+    }
+
+  }
+
+}
+
+.dot {
+  position: relative;
+
+}
+
+.dot::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: $primary;
+  border-radius: 50%;
+  left: -5%;
+  top: 30%;
+
+
+}
+
+.month {
+  position: relative;
+  border: 1px solid black;
+  padding: 32px 8px;
+  height: auto;
+  border-radius: 12px;
+
+
+
+  &__learning {
+    position: absolute;
+    top: -20%;
+    background-color: $light;
+    padding: 4px 8px;
+
+  }
+}
+
+.title {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 48px;
+    bottom: 34%;
+    left: 3%;
+    background-color: $secondary;
+
+  }
+
 }

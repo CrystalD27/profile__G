@@ -1,0 +1,10 @@
+.btn-primary {
+    width: 120px;
+    background: transparent;
+    color: $dark;
+
+    &:hover {
+        background: $primary;
+color:$light;
+    }
+}
